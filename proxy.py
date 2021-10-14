@@ -17,7 +17,7 @@ def recycler(proxylist,id_):
         try:
             r = requests.get(target, proxies={"http":"http://"+x}, timeout=int(timeout))
             if r.status_code == 200:
-                print("[PROXY ONLINE],http://"+x)
+                print("\33[1m \33[32m[PROXY ONLINE]\033[0m \33[37m","http://"+x)
         except:
             pass
 
